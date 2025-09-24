@@ -6,7 +6,7 @@ Prompts required: Around 18+
 ## Limitations
 - No **Dependencies** (**SVG** is plain text after all)
 - **Pyhon** script
-- Outputs **SVB** files
+- Outputs **SVG** files
 - No **Holes** between **Tiles**
 
 ## Arguments
