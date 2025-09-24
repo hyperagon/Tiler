@@ -1,12 +1,13 @@
 # Tiler
 A Tiled Mesh SVG Builder, vibe-coded in 2025-09-24.
 
-Prompts required: Around 18+.
+Prompts required: Around 18+
 
 ## Limitations
-- No Dependencies
-- Pyhon script
-- No Holes between Tiles
+- No **Dependencies** (**SVG** is plain text after all)
+- **Pyhon** script
+- Outputs **SVB** files
+- No **Holes** between **Tiles**
 
 ## Arguments
 - **width** and **height** of the **document**
