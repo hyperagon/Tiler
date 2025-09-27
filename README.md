@@ -15,3 +15,4 @@ Prompts required: Around 18+
 - **fill** and **stroke color**
 - **stroke width**
 - **Tile size (width=height)**
+- **rotation**, this applies to all **Tiles** together not individually
