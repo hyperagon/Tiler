@@ -6,6 +6,7 @@ A Tiled Mesh **SVG**/**RAWR** Builder, vibe-coded since 2025-09-24.
 - **Pyhon** script
 - Outputs **SVG** or **RAWR** files and the second can be animated
 - No **Holes** between **Tiles**
+- No **overlapping** **Tiles**
 
 ## Arguments
 - **width** and **height** of the **document**
