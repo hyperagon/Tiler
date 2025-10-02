@@ -2,7 +2,7 @@
 A Tiled Mesh SVG Builder, vibe-coded since 2025-09-24.
 
 ## Features
-- No **Dependencies** (**SVG** is plain text after all)
+- No **Dependencies** (**SVG**/**RAWR** is plain text after all)
 - **Pyhon** script
 - Outputs **SVG** files
 - Outputs **RAWR** files and these can be animated
