@@ -1,5 +1,6 @@
 # Tiler
 A Tiled Mesh **SVG**/**RAWR** Builder, vibe-coded since 2025-09-24.
+Each file starts with the initial prompt, it also shows how hard it is to get models to properly follow instrucriona.
 
 ## Features
 - No **Dependencies** (**SVG**/**RAWR** is plain text after all)
