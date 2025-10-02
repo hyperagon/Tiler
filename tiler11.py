@@ -1,0 +1,2345 @@
+"""
+Fill generate_rawr_hexagonal_tiling, it should make a Glaximate RAWR similar to the following example with no holes or overlaps.
+
+{
+    "assets": {
+        "__type__": "Assets",
+        "colors": {
+            "__type__": "NamedColorList",
+            "name": "",
+            "uuid": "780598a4-891b-4de9-b1ce-9a228569ad47",
+            "values": [
+            ]
+        },
+        "compositions": {
+            "__type__": "CompositionList",
+            "name": "",
+            "uuid": "467cf2ca-d961-49dc-bb36-280cd3d87a07",
+            "values": [
+                {
+                    "__type__": "Composition",
+                    "animation": {
+                        "__type__": "AnimationContainer",
+                        "first_frame": 0,
+                        "last_frame": 60
+                    },
+                    "fps": 60,
+                    "group_color": "#00000000",
+                    "height": 200,
+                    "locked": false,
+                    "name": "Composition",
+                    "shapes": [
+                        {
+                            "__type__": "PreCompLayer",
+                            "composition": "eadf8d7a-c423-4449-96d8-da8dcf21d728",
+                            "group_color": "#00000000",
+                            "locked": false,
+                            "name": "Composition Layer",
+                            "opacity": {
+                                "value": 1
+                            },
+                            "size": {
+                                "height": 200,
+                                "width": 200
+                            },
+                            "timing": {
+                                "__type__": "StretchableTime",
+                                "start_time": 0,
+                                "stretch": 1
+                            },
+                            "transform": {
+                                "__type__": "Transform",
+                                "anchor_point": {
+                                    "value": {
+                                        "x": 0,
+                                        "y": 0
+                                    }
+                                },
+                                "position": {
+                                    "value": {
+                                        "x": 0,
+                                        "y": 0
+                                    }
+                                },
+                                "rotation": {
+                                    "value": 0
+                                },
+                                "scale": {
+                                    "value": {
+                                        "x": 1,
+                                        "y": 1
+                                    }
+                                }
+                            },
+                            "uuid": "094df7d8-53dc-4ff3-85aa-e1b8fff72b25",
+                            "visible": true
+                        },
+                        {
+                            "__type__": "PreCompLayer",
+                            "composition": "eadf8d7a-c423-4449-96d8-da8dcf21d728",
+                            "group_color": "#00000000",
+                            "locked": false,
+                            "name": "Composition Layer 2",
+                            "opacity": {
+                                "value": 1
+                            },
+                            "size": {
+                                "height": 200,
+                                "width": 200
+                            },
+                            "timing": {
+                                "__type__": "StretchableTime",
+                                "start_time": 0,
+                                "stretch": 1
+                            },
+                            "transform": {
+                                "__type__": "Transform",
+                                "anchor_point": {
+                                    "value": {
+                                        "x": 0,
+                                        "y": 0
+                                    }
+                                },
+                                "position": {
+                                    "value": {
+                                        "x": 0,
+                                        "y": 100
+                                    }
+                                },
+                                "rotation": {
+                                    "value": 0
+                                },
+                                "scale": {
+                                    "value": {
+                                        "x": 1,
+                                        "y": 1
+                                    }
+                                }
+                            },
+                            "uuid": "44387bb6-b0a4-462d-96db-6cb20a024774",
+                            "visible": true
+                        },
+                        {
+                            "__type__": "PreCompLayer",
+                            "composition": "eadf8d7a-c423-4449-96d8-da8dcf21d728",
+                            "group_color": "#00000000",
+                            "locked": false,
+                            "name": "Composition Layer 3",
+                            "opacity": {
+                                "value": 1
+                            },
+                            "size": {
+                                "height": 200,
+                                "width": 200
+                            },
+                            "timing": {
+                                "__type__": "StretchableTime",
+                                "start_time": 0,
+                                "stretch": 1
+                            },
+                            "transform": {
+                                "__type__": "Transform",
+                                "anchor_point": {
+                                    "value": {
+                                        "x": 0,
+                                        "y": 0
+                                    }
+                                },
+                                "position": {
+                                    "value": {
+                                        "x": 100,
+                                        "y": 100
+                                    }
+                                },
+                                "rotation": {
+                                    "value": 0
+                                },
+                                "scale": {
+                                    "value": {
+                                        "x": 1,
+                                        "y": 1
+                                    }
+                                }
+                            },
+                            "uuid": "5be3237d-1dd9-4ac2-b836-2a5be6e973bb",
+                            "visible": true
+                        },
+                        {
+                            "__type__": "PreCompLayer",
+                            "composition": "eadf8d7a-c423-4449-96d8-da8dcf21d728",
+                            "group_color": "#00000000",
+                            "locked": false,
+                            "name": "Composition Layer 1",
+                            "opacity": {
+                                "value": 1
+                            },
+                            "size": {
+                                "height": 200,
+                                "width": 200
+                            },
+                            "timing": {
+                                "__type__": "StretchableTime",
+                                "start_time": 0,
+                                "stretch": 1
+                            },
+                            "transform": {
+                                "__type__": "Transform",
+                                "anchor_point": {
+                                    "value": {
+                                        "x": 0,
+                                        "y": 0
+                                    }
+                                },
+                                "position": {
+                                    "value": {
+                                        "x": 100,
+                                        "y": 0
+                                    }
+                                },
+                                "rotation": {
+                                    "value": 0
+                                },
+                                "scale": {
+                                    "value": {
+                                        "x": 1,
+                                        "y": 1
+                                    }
+                                }
+                            },
+                            "uuid": "e76a00f4-408f-432f-a9ff-519a9b14b0b6",
+                            "visible": true
+                        }
+                    ],
+                    "uuid": "ce373fff-6f11-4850-8510-ca9ae985ffea",
+                    "visible": true,
+                    "width": 200
+                },
+                {
+                    "__type__": "Composition",
+                    "animation": {
+                        "__type__": "AnimationContainer",
+                        "first_frame": 0,
+                        "last_frame": 60
+                    },
+                    "fps": 60,
+                    "group_color": "#00000000",
+                    "height": 100,
+                    "locked": false,
+                    "name": "Layer",
+                    "shapes": [
+                        {
+                            "__type__": "Layer",
+                            "animation": {
+                                "__type__": "AnimationContainer",
+                                "first_frame": 0,
+                                "last_frame": 60
+                            },
+                            "auto_orient": false,
+                            "group_color": "#00000000",
+                            "locked": false,
+                            "mask": {
+                                "__type__": "MaskSettings",
+                                "inverted": false,
+                                "mask": "NoMask"
+                            },
+                            "name": "Layer",
+                            "opacity": {
+                                "value": 1
+                            },
+                            "parent": null,
+                            "render": true,
+                            "shapes": [
+                                {
+                                    "__type__": "Group",
+                                    "auto_orient": false,
+                                    "group_color": "#00000000",
+                                    "locked": false,
+                                    "name": "PolyStar",
+                                    "opacity": {
+                                        "value": 1
+                                    },
+                                    "shapes": [
+                                        {
+                                            "__type__": "Fill",
+                                            "color": {
+                                                "value": "#ffffff"
+                                            },
+                                            "fill_rule": "NonZero",
+                                            "group_color": "#00000000",
+                                            "locked": false,
+                                            "name": "Fill",
+                                            "opacity": {
+                                                "value": 1
+                                            },
+                                            "use": null,
+                                            "uuid": "b26eff9f-6b6d-4a6e-b023-b4d8281a1c88",
+                                            "visible": true
+                                        },
+                                        {
+                                            "__type__": "Stroke",
+                                            "cap": "ButtCap",
+                                            "color": {
+                                                "value": "#000000"
+                                            },
+                                            "group_color": "#00000000",
+                                            "join": "MiterJoin",
+                                            "locked": false,
+                                            "miter_limit": 4,
+                                            "name": "Stroke",
+                                            "opacity": {
+                                                "value": 1
+                                            },
+                                            "use": null,
+                                            "uuid": "211cc21d-581b-446f-9f79-8e838e6461ae",
+                                            "visible": true,
+                                            "width": {
+                                                "value": 1
+                                            }
+                                        },
+                                        {
+                                            "__type__": "PolyStar",
+                                            "angle": {
+                                                "value": 180
+                                            },
+                                            "group_color": "#00000000",
+                                            "inner_radius": {
+                                                "value": 50
+                                            },
+                                            "inner_roundness": {
+                                                "value": 0
+                                            },
+                                            "locked": false,
+                                            "name": "PolyStar",
+                                            "outer_radius": {
+                                                "value": 50
+                                            },
+                                            "outer_roundness": {
+                                                "value": 0
+                                            },
+                                            "points": {
+                                                "value": 6
+                                            },
+                                            "position": {
+                                                "value": {
+                                                    "x": 0,
+                                                    "y": 0
+                                                }
+                                            },
+                                            "reversed": false,
+                                            "type": "Polygon",
+                                            "uuid": "68e45072-9665-4b55-ad21-193cba505d0a",
+                                            "visible": true
+                                        }
+                                    ],
+                                    "transform": {
+                                        "__type__": "Transform",
+                                        "anchor_point": {
+                                            "value": {
+                                                "x": 0,
+                                                "y": 0
+                                            }
+                                        },
+                                        "position": {
+                                            "value": {
+                                                "x": 50,
+                                                "y": 50
+                                            }
+                                        },
+                                        "rotation": {
+                                            "value": 0
+                                        },
+                                        "scale": {
+                                            "value": {
+                                                "x": 1,
+                                                "y": 1
+                                            }
+                                        }
+                                    },
+                                    "uuid": "b598bdf0-0fe4-4613-949f-6f7a8ff87ddc",
+                                    "visible": true
+                                }
+                            ],
+                            "transform": {
+                                "__type__": "Transform",
+                                "anchor_point": {
+                                    "value": {
+                                        "x": 50,
+                                        "y": 50
+                                    }
+                                },
+                                "position": {
+                                    "value": {
+                                        "x": 50,
+                                        "y": 50
+                                    }
+                                },
+                                "rotation": {
+                                    "value": 0
+                                },
+                                "scale": {
+                                    "keyframes": [
+                                        {
+                                            "after": {
+                                                "x": 1,
+                                                "y": 1
+                                            },
+                                            "before": {
+                                                "x": 0,
+                                                "y": 0
+                                            },
+                                            "time": 0,
+                                            "value": {
+                                                "x": 0,
+                                                "y": 0
+                                            }
+                                        },
+                                        {
+                                            "after": {
+                                                "x": 1,
+                                                "y": 1
+                                            },
+                                            "before": {
+                                                "x": 0,
+                                                "y": 0
+                                            },
+                                            "time": 30,
+                                            "value": {
+                                                "x": 1,
+                                                "y": 1
+                                            }
+                                        },
+                                        {
+                                            "after": {
+                                                "x": 1,
+                                                "y": 1
+                                            },
+                                            "before": {
+                                                "x": 0,
+                                                "y": 0
+                                            },
+                                            "time": 60,
+                                            "value": {
+                                                "x": 0.009999999776482582,
+                                                "y": 0
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "uuid": "b6eb2e1a-990f-405a-a06a-7b6438c33937",
+                            "visible": true
+                        }
+                    ],
+                    "uuid": "eadf8d7a-c423-4449-96d8-da8dcf21d728",
+                    "visible": true,
+                    "width": 100
+                }
+            ]
+        },
+        "fonts": {
+            "__type__": "FontList",
+            "name": "",
+            "uuid": "a95cc103-93dc-462a-a954-149cf6108951",
+            "values": [
+            ]
+        },
+        "gradient_colors": {
+            "__type__": "GradientColorsList",
+            "name": "",
+            "uuid": "faf3ca4b-9e13-40de-9fc4-6c71a9271c77",
+            "values": [
+            ]
+        },
+        "gradients": {
+            "__type__": "GradientList",
+            "name": "",
+            "uuid": "f05b4978-f357-4703-860b-9aaff15e2463",
+            "values": [
+            ]
+        },
+        "images": {
+            "__type__": "BitmapList",
+            "name": "",
+            "uuid": "fd78682c-5bcc-4264-aca5-14348c7895da",
+            "values": [
+            ]
+        },
+        "name": "",
+        "uuid": "76e8ad08-8b1d-46f5-8e8d-f0e45cbac797"
+    },
+    "format": {
+        "format_version": 8,
+        "generator": "Glaxnimate",
+        "generator_version": "0.5.4+appimage-dc26f367"
+    },
+    "info": {
+        "author": "",
+        "description": "",
+        "keywords": [
+        ]
+    },
+    "metadata": {
+    }
+}
+"""
+import argparse
+import math
+import json
+import uuid
+
+def generate_triangle(x, y, size, inverted=False, fill="white", stroke="black", stroke_width=1):
+    """Generate SVG path for an equilateral triangle."""
+    height = size * math.sqrt(3) / 2
+    
+    if inverted:
+        # Inverted triangle (pointing down)
+        points = [
+            (x, y + height/2),              # Bottom point
+            (x - size/2, y - height/2),     # Top left
+            (x + size/2, y - height/2)      # Top right
+        ]
+    else:
+        # Upright triangle (pointing up)
+        points = [
+            (x, y - height/2),              # Top point
+            (x - size/2, y + height/2),     # Bottom left
+            (x + size/2, y + height/2)      # Bottom right
+        ]
+    
+    points_str = ' '.join([f"{p[0]},{p[1]}" for p in points])
+    return f'<polygon points="{points_str}" fill="{fill}" stroke="{stroke}" stroke-width="{stroke_width}"/>'
+
+def generate_square(x, y, size, fill="white", stroke="black", stroke_width=1):
+    """Generate SVG path for a square."""
+    half_size = size / 2
+    points = [
+        (x - half_size, y - half_size),  # Top left
+        (x + half_size, y - half_size),  # Top right
+        (x + half_size, y + half_size),  # Bottom right
+        (x - half_size, y + half_size)   # Bottom left
+    ]
+    points_str = ' '.join([f"{p[0]},{p[1]}" for p in points])
+    return f'<polygon points="{points_str}" fill="{fill}" stroke="{stroke}" stroke-width="{stroke_width}"/>'
+
+def generate_hexagon(x, y, size, fill="white", stroke="black", stroke_width=1):
+    """Generate SVG path for a regular hexagon with flat top."""
+    points = []
+    for i in range(6):
+        angle = math.pi / 3 * i
+        # Rotate by 30 degrees to get flat top
+        angle += math.pi / 6
+        px = x + size * math.cos(angle)
+        py = y + size * math.sin(angle)
+        points.append((px, py))
+    points_str = ' '.join([f"{p[0]},{p[1]}" for p in points])
+    return f'<polygon points="{points_str}" fill="{fill}" stroke="{stroke}" stroke-width="{stroke_width}"/>'
+
+def rotate_point(x, y, cx, cy, angle_degrees):
+    """Rotate a point (x, y) around a center point (cx, cy) by the given angle in degrees."""
+    angle_rad = math.radians(angle_degrees)
+    cos_angle = math.cos(angle_rad)
+    sin_angle = math.sin(angle_rad)
+    
+    # Translate point to origin
+    tx = x - cx
+    ty = y - cy
+    
+    # Rotate point
+    rx = tx * cos_angle - ty * sin_angle
+    ry = tx * sin_angle + ty * cos_angle
+    
+    # Translate back
+    return rx + cx, ry + cy
+
+def calculate_expanded_dimensions(width, height, rotation_degrees):
+    """Calculate how much we need to expand the grid to cover the canvas after rotation."""
+    if rotation_degrees == 0:
+        return width, height
+    
+    # Convert rotation to radians
+    angle = math.radians(rotation_degrees)
+    
+    # Calculate the maximum expansion needed in any direction
+    # This is the maximum distance from the center to a corner after rotation
+    half_diag = math.sqrt((width/2)**2 + (height/2)**2)
+    
+    # Calculate the required dimensions to cover the original canvas after rotation
+    expanded_width = 2 * half_diag
+    expanded_height = 2 * half_diag
+    
+    return expanded_width, expanded_height
+
+def is_triangle_inside_after_rotation(x, y, size, inverted, width, height, rotation):
+    """Check if a triangle is at least partially inside the document boundaries after rotation."""
+    height_tri = size * math.sqrt(3) / 2
+    
+    # Get triangle points
+    if inverted:
+        points = [
+            (x, y + height_tri/2),              # Bottom point
+            (x - size/2, y - height_tri/2),     # Top left
+            (x + size/2, y - height_tri/2)      # Top right
+        ]
+    else:
+        points = [
+            (x, y - height_tri/2),              # Top point
+            (x - size/2, y + height_tri/2),     # Bottom left
+            (x + size/2, y + height_tri/2)      # Bottom right
+        ]
+    
+    # Apply rotation to points
+    cx, cy = width/2, height/2
+    rotated_points = []
+    for px, py in points:
+        rx, ry = rotate_point(px, py, cx, cy, rotation)
+        rotated_points.append((rx, ry))
+    
+    # Check if any point is inside the document boundaries
+    for px, py in rotated_points:
+        if 0 <= px <= width and 0 <= py <= height:
+            return True
+    
+    # Check if any edge intersects with the document boundaries
+    for i in range(3):
+        x1, y1 = rotated_points[i]
+        x2, y2 = rotated_points[(i + 1) % 3]
+        
+        # Check intersection with left boundary (x = 0)
+        if (x1 <= 0 and x2 >= 0) or (x1 >= 0 and x2 <= 0):
+            if x1 != x2:  # Avoid division by zero
+                y_at_x0 = y1 + (y2 - y1) * (0 - x1) / (x2 - x1)
+                if 0 <= y_at_x0 <= height:
+                    return True
+        
+        # Check intersection with right boundary (x = width)
+        if (x1 <= width and x2 >= width) or (x1 >= width and x2 <= width):
+            if x1 != x2:  # Avoid division by zero
+                y_at_xwidth = y1 + (y2 - y1) * (width - x1) / (x2 - x1)
+                if 0 <= y_at_xwidth <= height:
+                    return True
+        
+        # Check intersection with top boundary (y = 0)
+        if (y1 <= 0 and y2 >= 0) or (y1 >= 0 and y2 <= 0):
+            if y1 != y2:  # Avoid division by zero
+                x_at_y0 = x1 + (x2 - x1) * (0 - y1) / (y2 - y1)
+                if 0 <= x_at_y0 <= width:
+                    return True
+        
+        # Check intersection with bottom boundary (y = height)
+        if (y1 <= height and y2 >= height) or (y1 >= height and y2 <= height):
+            if y1 != y2:  # Avoid division by zero
+                x_at_yheight = x1 + (x2 - x1) * (height - y1) / (y2 - y1)
+                if 0 <= x_at_yheight <= width:
+                    return True
+    
+    return False
+
+def is_square_inside_after_rotation(x, y, size, width, height, rotation):
+    """Check if a square is at least partially inside the document boundaries after rotation."""
+    half_size = size / 2
+    
+    # Get square points
+    points = [
+        (x - half_size, y - half_size),  # Top left
+        (x + half_size, y - half_size),  # Top right
+        (x + half_size, y + half_size),  # Bottom right
+        (x - half_size, y + half_size)   # Bottom left
+    ]
+    
+    # Apply rotation to points
+    cx, cy = width/2, height/2
+    rotated_points = []
+    for px, py in points:
+        rx, ry = rotate_point(px, py, cx, cy, rotation)
+        rotated_points.append((rx, ry))
+    
+    # Check if any point is inside the document boundaries
+    for px, py in rotated_points:
+        if 0 <= px <= width and 0 <= py <= height:
+            return True
+    
+    # Check if any edge intersects with the document boundaries
+    for i in range(4):
+        x1, y1 = rotated_points[i]
+        x2, y2 = rotated_points[(i + 1) % 4]
+        
+        # Check intersection with left boundary (x = 0)
+        if (x1 <= 0 and x2 >= 0) or (x1 >= 0 and x2 <= 0):
+            if x1 != x2:  # Avoid division by zero
+                y_at_x0 = y1 + (y2 - y1) * (0 - x1) / (x2 - x1)
+                if 0 <= y_at_x0 <= height:
+                    return True
+        
+        # Check intersection with right boundary (x = width)
+        if (x1 <= width and x2 >= width) or (x1 >= width and x2 <= width):
+            if x1 != x2:  # Avoid division by zero
+                y_at_xwidth = y1 + (y2 - y1) * (width - x1) / (x2 - x1)
+                if 0 <= y_at_xwidth <= height:
+                    return True
+        
+        # Check intersection with top boundary (y = 0)
+        if (y1 <= 0 and y2 >= 0) or (y1 >= 0 and y2 <= 0):
+            if y1 != y2:  # Avoid division by zero
+                x_at_y0 = x1 + (x2 - x1) * (0 - y1) / (y2 - y1)
+                if 0 <= x_at_y0 <= width:
+                    return True
+        
+        # Check intersection with bottom boundary (y = height)
+        if (y1 <= height and y2 >= height) or (y1 >= height and y2 <= height):
+            if y1 != y2:  # Avoid division by zero
+                x_at_yheight = x1 + (x2 - x1) * (height - y1) / (y2 - y1)
+                if 0 <= x_at_yheight <= width:
+                    return True
+    
+    return False
+
+def is_hexagon_inside_after_rotation(x, y, size, width, height, rotation):
+    """Check if a hexagon is at least partially inside the document boundaries after rotation."""
+    # Get hexagon points
+    points = []
+    for i in range(6):
+        angle = math.pi / 3 * i
+        # Rotate by 30 degrees to get flat top
+        angle += math.pi / 6
+        px = x + size * math.cos(angle)
+        py = y + size * math.sin(angle)
+        points.append((px, py))
+    
+    # Apply rotation to points
+    cx, cy = width/2, height/2
+    rotated_points = []
+    for px, py in points:
+        rx, ry = rotate_point(px, py, cx, cy, rotation)
+        rotated_points.append((rx, ry))
+    
+    # Check if any point is inside the document boundaries
+    for px, py in rotated_points:
+        if 0 <= px <= width and 0 <= py <= height:
+            return True
+    
+    # Check if any edge intersects with the document boundaries
+    for i in range(6):
+        x1, y1 = rotated_points[i]
+        x2, y2 = rotated_points[(i + 1) % 6]
+        
+        # Check intersection with left boundary (x = 0)
+        if (x1 <= 0 and x2 >= 0) or (x1 >= 0 and x2 <= 0):
+            if x1 != x2:  # Avoid division by zero
+                y_at_x0 = y1 + (y2 - y1) * (0 - x1) / (x2 - x1)
+                if 0 <= y_at_x0 <= height:
+                    return True
+        
+        # Check intersection with right boundary (x = width)
+        if (x1 <= width and x2 >= width) or (x1 >= width and x2 <= width):
+            if x1 != x2:  # Avoid division by zero
+                y_at_xwidth = y1 + (y2 - y1) * (width - x1) / (x2 - x1)
+                if 0 <= y_at_xwidth <= height:
+                    return True
+        
+        # Check intersection with top boundary (y = 0)
+        if (y1 <= 0 and y2 >= 0) or (y1 >= 0 and y2 <= 0):
+            if y1 != y2:  # Avoid division by zero
+                x_at_y0 = x1 + (x2 - x1) * (0 - y1) / (y2 - y1)
+                if 0 <= x_at_y0 <= width:
+                    return True
+        
+        # Check intersection with bottom boundary (y = height)
+        if (y1 <= height and y2 >= height) or (y1 >= height and y2 <= height):
+            if y1 != y2:  # Avoid division by zero
+                x_at_yheight = x1 + (x2 - x1) * (height - y1) / (y2 - y1)
+                if 0 <= x_at_yheight <= width:
+                    return True
+    
+    return False
+
+def generate_triangular_tiling(width, height, size, rotation, fill, stroke, stroke_width, animate=False):
+    """Generate a triangular tiling pattern with NO HOLES and NO OVERLAPS."""
+    # Calculate dimensions for equilateral triangles
+    triangle_height = size * math.sqrt(3) / 2
+    
+    # Calculate how much we need to expand the grid
+    expanded_width, expanded_height = calculate_expanded_dimensions(width, height, rotation)
+    
+    # Calculate grid dimensions with expansion
+    cols = math.ceil(expanded_width / (size/2)) + 2
+    rows = math.ceil(expanded_height / triangle_height) + 2
+    
+    # Starting position to center the pattern
+    start_x = (width - (cols-1) * size/2) / 2
+    start_y = (height - (rows-1) * triangle_height) / 2
+    
+    # Generate all tiles first
+    tiles = []
+    for row in range(rows):
+        for col in range(cols):
+            # Calculate position
+            x = start_x + col * size/2
+            y = start_y + row * triangle_height
+            
+            # Alternate between up and down triangles based on position
+            inverted = (row + col) % 2 == 1
+            
+            # Check if the triangle is at least partially inside the document after rotation
+            if is_triangle_inside_after_rotation(x, y, size, inverted, width, height, rotation):
+                if inverted:
+                    # Down-pointing triangle
+                    triangle = generate_triangle(x, y, size, True, fill, stroke, stroke_width)
+                else:
+                    # Up-pointing triangle
+                    triangle = generate_triangle(x, y, size, False, fill, stroke, stroke_width)
+                
+                if animate:
+                    # Add animation to the triangle
+                    triangle = f'<g transform="translate({x},{y})">' + \
+                               f'<animateTransform attributeName="transform" type="scale" ' + \
+                               f'values="0;1;0" dur="1s" repeatCount="indefinite" additive="sum"/>' + \
+                               f'<g transform="translate({-x},{-y})">{triangle}</g></g>'
+                
+                tiles.append(triangle)
+    
+    # Create SVG with rotation applied to the entire group
+    svg_content = f'<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">\n'
+    
+    if rotation != 0:
+        # Add a group with rotation transformation centered in the canvas
+        svg_content += f'<g transform="rotate({rotation} {width/2} {height/2})">\n'
+        svg_content += '\n'.join(tiles)
+        svg_content += '\n</g>\n'
+    else:
+        # No rotation, just add the tiles directly
+        svg_content += '\n'.join(tiles)
+    
+    svg_content += '\n</svg>'
+    return svg_content
+
+def generate_square_tiling(width, height, size, rotation, fill, stroke, stroke_width, animate=False):
+    """Generate a square tiling pattern with NO HOLES and NO OVERLAPS."""
+    # Calculate how much we need to expand the grid
+    expanded_width, expanded_height = calculate_expanded_dimensions(width, height, rotation)
+    
+    # Calculate grid dimensions with expansion
+    cols = math.ceil(expanded_width / size) + 2
+    rows = math.ceil(expanded_height / size) + 2
+    
+    # Starting position to center the pattern
+    start_x = (width - (cols-1) * size) / 2
+    start_y = (height - (rows-1) * size) / 2
+    
+    # Generate all tiles first
+    tiles = []
+    for row in range(rows):
+        for col in range(cols):
+            # Calculate position
+            x = start_x + col * size + size/2
+            y = start_y + row * size + size/2
+            
+            # Check if the square is at least partially inside the document after rotation
+            if is_square_inside_after_rotation(x, y, size, width, height, rotation):
+                # Add square
+                square = generate_square(x, y, size, fill, stroke, stroke_width)
+                
+                if animate:
+                    # Add animation to the square
+                    square = f'<g transform="translate({x},{y})">' + \
+                             f'<animateTransform attributeName="transform" type="scale" ' + \
+                             f'values="0;1;0" dur="1s" repeatCount="indefinite" additive="sum"/>' + \
+                             f'<g transform="translate({-x},{-y})">{square}</g></g>'
+                
+                tiles.append(square)
+    
+    # Create SVG with rotation applied to the entire group
+    svg_content = f'<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">\n'
+    
+    if rotation != 0:
+        # Add a group with rotation transformation centered in the canvas
+        svg_content += f'<g transform="rotate({rotation} {width/2} {height/2})">\n'
+        svg_content += '\n'.join(tiles)
+        svg_content += '\n</g>\n'
+    else:
+        # No rotation, just add the tiles directly
+        svg_content += '\n'.join(tiles)
+    
+    svg_content += '\n</svg>'
+    return svg_content
+
+def generate_hexagonal_tiling(width, height, size, rotation, fill, stroke, stroke_width, animate=False):
+    """Generate a hexagonal tiling pattern with NO HOLES and NO OVERLAPS."""
+    # Calculate hexagon dimensions
+    hex_radius = size  # Distance from center to vertex
+    hex_width = hex_radius * math.sqrt(3)  # Width of hexagon (flat to flat)
+    hex_height = hex_radius * 2  # Height of hexagon (point to point)
+    
+    # Calculate how much we need to expand the grid
+    expanded_width, expanded_height = calculate_expanded_dimensions(width, height, rotation)
+    
+    # Calculate spacing between hexagon centers
+    horizontal_spacing = hex_width  # Horizontal distance between adjacent hexagon centers
+    vertical_spacing = hex_height * 0.75  # Vertical distance between adjacent hexagon centers
+    
+    # Calculate grid dimensions with expansion
+    cols = math.ceil(expanded_width / horizontal_spacing) + 2
+    rows = math.ceil(expanded_height / vertical_spacing) + 2
+    
+    # Starting position to center the pattern
+    start_x = (width - (cols-1) * horizontal_spacing) / 2
+    start_y = (height - (rows-1) * vertical_spacing) / 2
+    
+    # Generate all tiles first
+    tiles = []
+    for row in range(rows):
+        for col in range(cols):
+            # Calculate position
+            x = start_x + col * horizontal_spacing
+            y = start_y + row * vertical_spacing
+            
+            # Offset every other row by half the horizontal spacing
+            if row % 2 == 1:
+                x += horizontal_spacing / 2
+            
+            # Check if the hexagon is at least partially inside the document after rotation
+            if is_hexagon_inside_after_rotation(x, y, hex_radius, width, height, rotation):
+                # Add hexagon
+                hexagon = generate_hexagon(x, y, hex_radius, fill, stroke, stroke_width)
+                
+                if animate:
+                    # Add animation to the hexagon
+                    hexagon = f'<g transform="translate({x},{y})">' + \
+                              f'<animateTransform attributeName="transform" type="scale" ' + \
+                              f'values="0;1;0" dur="1s" repeatCount="indefinite" additive="sum"/>' + \
+                              f'<g transform="translate({-x},{-y})">{hexagon}</g></g>'
+                
+                tiles.append(hexagon)
+    
+    # Create SVG with rotation applied to the entire group
+    svg_content = f'<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">\n'
+    
+    if rotation != 0:
+        # Add a group with rotation transformation centered in the canvas
+        svg_content += f'<g transform="rotate({rotation} {width/2} {height/2})">\n'
+        svg_content += '\n'.join(tiles)
+        svg_content += '\n</g>\n'
+    else:
+        # No rotation, just add the tiles directly
+        svg_content += '\n'.join(tiles)
+    
+    svg_content += '\n</svg>'
+    return svg_content
+
+def generate_svg(width, height, corners, tile_size, rotation, fill, stroke, stroke_width, animate=False):
+    """Generate the full SVG content with tiled shapes."""
+    if corners == 3:
+        return generate_triangular_tiling(width, height, tile_size, rotation, fill, stroke, stroke_width, animate)
+    elif corners == 4:
+        return generate_square_tiling(width, height, tile_size, rotation, fill, stroke, stroke_width, animate)
+    elif corners == 6:
+        return generate_hexagonal_tiling(width, height, tile_size, rotation, fill, stroke, stroke_width, animate)
+    else:
+        raise ValueError("Number of corners must be 3, 4, or 6.")
+
+def generate_rawr(width, height, corners, tile_size, rotation, fill, stroke, stroke_width, animate):
+    """Generate the full SVG content with tiled shapes."""
+    if corners == 3:
+        return generate_rawr_triangular_tiling(width, height, corners, tile_size, rotation, fill, stroke, stroke_width, animate)
+    elif corners == 4:
+        return generate_rawr_square_tiling(width, height, corners, tile_size, rotation, fill, stroke, stroke_width, animate)
+    elif corners == 6:
+        return generate_rawr_hexagonal_tiling(width, height, corners, tile_size, rotation, fill, stroke, stroke_width, animate)
+    else:
+        raise ValueError("Number of corners must be 3, 4, or 6.")
+        
+def generate_rawr_triangular_tiling(width, height, corners, tile_size, rotation, fill, stroke, stroke_width, animate):
+    """Generate a RAWR file with a triangular tiling pattern that has no holes or overlaps."""
+    
+    # Create a base structure for the RAWR file
+    glaxnimate_data = {
+        "assets": {
+            "__type__": "Assets",
+            "colors": {
+                "__type__": "NamedColorList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "compositions": {
+                "__type__": "CompositionList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "fonts": {
+                "__type__": "FontList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "gradient_colors": {
+                "__type__": "GradientColorsList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "gradients": {
+                "__type__": "GradientList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "images": {
+                "__type__": "BitmapList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "name": "",
+            "uuid": str(uuid.uuid4())
+        },
+        "format": {
+            "format_version": 8,
+            "generator": "Glaxnimate",
+            "generator_version": "0.5.4+appimage-dc26f367"
+        },
+        "info": {
+            "author": "",
+            "description": "",
+            "keywords": []
+        },
+        "metadata": {}
+    }
+    
+    # Calculate dimensions for equilateral triangles
+    triangle_height = tile_size * math.sqrt(3) / 2
+    
+    # Create the precomposed tile composition for an upright triangle
+    upright_triangle_uuid = str(uuid.uuid4())
+    upright_triangle_composition = {
+        "__type__": "Composition",
+        "animation": {
+            "__type__": "AnimationContainer",
+            "first_frame": 0,
+            "last_frame": 180
+        },
+        "fps": 60,
+        "group_color": "#00000000",
+        "height": triangle_height,
+        "locked": False,
+        "name": "Upright Triangle",
+        "shapes": [
+            {
+                "__type__": "Layer",
+                "animation": {
+                    "__type__": "AnimationContainer",
+                    "first_frame": 0,
+                    "last_frame": 180
+                },
+                "auto_orient": False,
+                "group_color": "#00000000",
+                "locked": False,
+                "mask": {
+                    "__type__": "MaskSettings",
+                    "inverted": False,
+                    "mask": "NoMask"
+                },
+                "name": "Layer",
+                "opacity": {
+                    "value": 1
+                },
+                "parent": None,
+                "render": True,
+                "shapes": [
+                    {
+                        "__type__": "Group",
+                        "auto_orient": False,
+                        "group_color": "#00000000",
+                        "locked": False,
+                        "name": "Path",
+                        "opacity": {
+                            "value": 1
+                        },
+                        "shapes": [
+                            {
+                                "__type__": "Fill",
+                                "color": {
+                                    "value": fill
+                                },
+                                "fill_rule": "NonZero",
+                                "group_color": "#00000000",
+                                "locked": False,
+                                "name": "Fill",
+                                "opacity": {
+                                    "value": 1
+                                },
+                                "use": None,
+                                "uuid": str(uuid.uuid4()),
+                                "visible": True
+                            },
+                            {
+                                "__type__": "Stroke",
+                                "cap": "ButtCap",
+                                "color": {
+                                    "value": stroke
+                                },
+                                "group_color": "#00000000",
+                                "join": "MiterJoin",
+                                "locked": False,
+                                "miter_limit": 4,
+                                "name": "Stroke",
+                                "opacity": {
+                                    "value": 1
+                                },
+                                "use": None,
+                                "uuid": str(uuid.uuid4()),
+                                "visible": True,
+                                "width": {
+                                    "value": stroke_width
+                                }
+                            },
+                            {
+                                "__type__": "Path",
+                                "closed": True,
+                                "group_color": "#00000000",
+                                "locked": False,
+                                "name": "Path",
+                                "reversed": False,
+                                "shape": {
+                                    "value": {
+                                        "closed": True,
+                                        "points": [
+                                            {
+                                                "pos": {
+                                                    "x": tile_size/2,
+                                                    "y": 0
+                                                },
+                                                "tan_in": {
+                                                    "x": tile_size/2,
+                                                    "y": 0
+                                                },
+                                                "tan_out": {
+                                                    "x": tile_size/2,
+                                                    "y": 0
+                                                },
+                                                "type": 0
+                                            },
+                                            {
+                                                "pos": {
+                                                    "x": tile_size,
+                                                    "y": triangle_height
+                                                },
+                                                "tan_in": {
+                                                    "x": tile_size,
+                                                    "y": triangle_height
+                                                },
+                                                "tan_out": {
+                                                    "x": tile_size,
+                                                    "y": triangle_height
+                                                },
+                                                "type": 1
+                                            },
+                                            {
+                                                "pos": {
+                                                    "x": 0,
+                                                    "y": triangle_height
+                                                },
+                                                "tan_in": {
+                                                    "x": 0,
+                                                    "y": triangle_height
+                                                },
+                                                "tan_out": {
+                                                    "x": 0,
+                                                    "y": triangle_height
+                                                },
+                                                "type": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "uuid": str(uuid.uuid4()),
+                                "visible": True
+                            }
+                        ],
+                        "transform": {
+                            "__type__": "Transform",
+                            "anchor_point": {
+                                "value": {
+                                    "x": tile_size/2,
+                                    "y": triangle_height/2
+                                }
+                            },
+                            "position": {
+                                "value": {
+                                    "x": tile_size/2,
+                                    "y": triangle_height/2
+                                }
+                            },
+                            "rotation": {
+                                "value": 0
+                            },
+                            "scale": {
+                                "value": {
+                                    "x": 1,
+                                    "y": 1
+                                }
+                            }
+                        },
+                        "uuid": str(uuid.uuid4()),
+                        "visible": True
+                    }
+                ],
+                "transform": {
+                    "__type__": "Transform",
+                    "anchor_point": {
+                        "value": {
+                            "x": tile_size/2,
+                            "y": triangle_height/2
+                        }
+                    },
+                    "position": {
+                        "value": {
+                            "x": tile_size/2,
+                            "y": triangle_height/2
+                        }
+                    },
+                    "rotation": {
+                        "value": 0
+                    },
+                    "scale": {
+                        "keyframes": [
+                            {
+                                "after": {
+                                    "x": 1,
+                                    "y": 1
+                                },
+                                "before": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "time": 0,
+                                "value": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            {
+                                "after": {
+                                    "x": 1,
+                                    "y": 1
+                                },
+                                "before": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "time": 30,
+                                "value": {
+                                    "x": 1,
+                                    "y": 1
+                                }
+                            },
+                            {
+                                "after": {
+                                    "x": 1,
+                                    "y": 1
+                                },
+                                "before": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "time": 60,
+                                "value": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            }
+                        ]
+                    }
+                },
+                "uuid": str(uuid.uuid4()),
+                "visible": True
+            }
+        ],
+        "uuid": upright_triangle_uuid,
+        "visible": True,
+        "width": tile_size
+    }
+    
+    # Create the precomposed tile composition for an inverted triangle
+    inverted_triangle_uuid = str(uuid.uuid4())
+    inverted_triangle_composition = {
+        "__type__": "Composition",
+        "animation": {
+            "__type__": "AnimationContainer",
+            "first_frame": 0,
+            "last_frame": 180
+        },
+        "fps": 60,
+        "group_color": "#00000000",
+        "height": triangle_height,
+        "locked": False,
+        "name": "Inverted Triangle",
+        "shapes": [
+            {
+                "__type__": "Layer",
+                "animation": {
+                    "__type__": "AnimationContainer",
+                    "first_frame": 0,
+                    "last_frame": 180
+                },
+                "auto_orient": False,
+                "group_color": "#00000000",
+                "locked": False,
+                "mask": {
+                    "__type__": "MaskSettings",
+                    "inverted": False,
+                    "mask": "NoMask"
+                },
+                "name": "Layer",
+                "opacity": {
+                    "value": 1
+                },
+                "parent": None,
+                "render": True,
+                "shapes": [
+                    {
+                        "__type__": "Group",
+                        "auto_orient": False,
+                        "group_color": "#00000000",
+                        "locked": False,
+                        "name": "Path",
+                        "opacity": {
+                            "value": 1
+                        },
+                        "shapes": [
+                            {
+                                "__type__": "Fill",
+                                "color": {
+                                    "value": fill
+                                },
+                                "fill_rule": "NonZero",
+                                "group_color": "#00000000",
+                                "locked": False,
+                                "name": "Fill",
+                                "opacity": {
+                                    "value": 1
+                                },
+                                "use": None,
+                                "uuid": str(uuid.uuid4()),
+                                "visible": True
+                            },
+                            {
+                                "__type__": "Stroke",
+                                "cap": "ButtCap",
+                                "color": {
+                                    "value": stroke
+                                },
+                                "group_color": "#00000000",
+                                "join": "MiterJoin",
+                                "locked": False,
+                                "miter_limit": 4,
+                                "name": "Stroke",
+                                "opacity": {
+                                    "value": 1
+                                },
+                                "use": None,
+                                "uuid": str(uuid.uuid4()),
+                                "visible": True,
+                                "width": {
+                                    "value": stroke_width
+                                }
+                            },
+                            {
+                                "__type__": "Path",
+                                "closed": True,
+                                "group_color": "#00000000",
+                                "locked": False,
+                                "name": "Path",
+                                "reversed": False,
+                                "shape": {
+                                    "value": {
+                                        "closed": True,
+                                        "points": [
+                                            {
+                                                "pos": {
+                                                    "x": 0,
+                                                    "y": 0
+                                                },
+                                                "tan_in": {
+                                                    "x": 0,
+                                                    "y": 0
+                                                },
+                                                "tan_out": {
+                                                    "x": 0,
+                                                    "y": 0
+                                                },
+                                                "type": 0
+                                            },
+                                            {
+                                                "pos": {
+                                                    "x": tile_size,
+                                                    "y": 0
+                                                },
+                                                "tan_in": {
+                                                    "x": tile_size,
+                                                    "y": 0
+                                                },
+                                                "tan_out": {
+                                                    "x": tile_size,
+                                                    "y": 0
+                                                },
+                                                "type": 1
+                                            },
+                                            {
+                                                "pos": {
+                                                    "x": tile_size/2,
+                                                    "y": triangle_height
+                                                },
+                                                "tan_in": {
+                                                    "x": tile_size/2,
+                                                    "y": triangle_height
+                                                },
+                                                "tan_out": {
+                                                    "x": tile_size/2,
+                                                    "y": triangle_height
+                                                },
+                                                "type": 1
+                                            }
+                                        ]
+                                    }
+                                },
+                                "uuid": str(uuid.uuid4()),
+                                "visible": True
+                            }
+                        ],
+                        "transform": {
+                            "__type__": "Transform",
+                            "anchor_point": {
+                                "value": {
+                                    "x": tile_size/2,
+                                    "y": triangle_height/2
+                                }
+                            },
+                            "position": {
+                                "value": {
+                                    "x": tile_size/2,
+                                    "y": triangle_height/2
+                                }
+                            },
+                            "rotation": {
+                                "value": 0
+                            },
+                            "scale": {
+                                "value": {
+                                    "x": 1,
+                                    "y": 1
+                                }
+                            }
+                        },
+                        "uuid": str(uuid.uuid4()),
+                        "visible": True
+                    }
+                ],
+                "transform": {
+                    "__type__": "Transform",
+                    "anchor_point": {
+                        "value": {
+                            "x": tile_size/2,
+                            "y": triangle_height/2
+                        }
+                    },
+                    "position": {
+                        "value": {
+                            "x": tile_size/2,
+                            "y": triangle_height/2
+                        }
+                    },
+                    "rotation": {
+                        "value": 0
+                    },
+                    "scale": {
+                        "keyframes": [
+                            {
+                                "after": {
+                                    "x": 1,
+                                    "y": 1
+                                },
+                                "before": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "time": 0,
+                                "value": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            {
+                                "after": {
+                                    "x": 1,
+                                    "y": 1
+                                },
+                                "before": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "time": 30,
+                                "value": {
+                                    "x": 1,
+                                    "y": 1
+                                }
+                            },
+                            {
+                                "after": {
+                                    "x": 1,
+                                    "y": 1
+                                },
+                                "before": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "time": 60,
+                                "value": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            }
+                        ]
+                    }
+                },
+                "uuid": str(uuid.uuid4()),
+                "visible": True
+            }
+        ],
+        "uuid": inverted_triangle_uuid,
+        "visible": True,
+        "width": tile_size
+    }
+    
+    # Calculate how many tiles we need
+    cols = math.ceil(width / (tile_size/2)) + 2
+    rows = math.ceil(height / triangle_height) + 2
+    
+    # Starting position to center the pattern
+    start_x = (width - (cols-1) * tile_size/2) / 2
+    start_y = (height - (rows-1) * triangle_height) / 2
+    
+    # Create the main composition with a grid of precomposed tiles
+    main_uuid = str(uuid.uuid4())
+    precomp_layers = []
+    
+    for row in range(rows):
+        for col in range(cols):
+            # Calculate position
+            x = start_x + col * tile_size/2
+            y = start_y + row * triangle_height
+            
+            # Alternate between upright and inverted triangles
+            if (row + col) % 2 == 0:
+                # Upright triangle
+                triangle_uuid = upright_triangle_uuid
+                triangle_name = f"Upright Triangle {row*cols + col + 1}"
+            else:
+                # Inverted triangle
+                triangle_uuid = inverted_triangle_uuid
+                triangle_name = f"Inverted Triangle {row*cols + col + 1}"
+            
+            # Create a precomposed layer for this triangle
+            precomp_layer = {
+                "__type__": "PreCompLayer",
+                "composition": triangle_uuid,
+                "group_color": "#00000000",
+                "locked": False,
+                "name": triangle_name,
+                "opacity": {"value": 1},
+                "size": {"height": triangle_height, "width": tile_size},
+                "timing": {
+                    "__type__": "StretchableTime",
+                    "start_time": 0,
+                    "stretch": 1
+                },
+                "transform": {
+                    "__type__": "Transform",
+                    "anchor_point": {"value": {"x": 0, "y": 0}},
+                    "position": {"value": {"x": x, "y": y}},
+                    "rotation": {"value": rotation},
+                    "scale": {"value": {"x": 1, "y": 1}}
+                },
+                "uuid": str(uuid.uuid4()),
+                "visible": True
+            }
+            
+            precomp_layers.append(precomp_layer)
+    
+    main_composition = {
+        "__type__": "Composition",
+        "animation": {
+            "__type__": "AnimationContainer",
+            "first_frame": 0,
+            "last_frame": 60
+        },
+        "fps": 60,
+        "group_color": "#00000000",
+        "height": height,
+        "locked": False,
+        "name": "Main Composition",
+        "shapes": precomp_layers,
+        "uuid": main_uuid,
+        "visible": True,
+        "width": width
+    }
+    
+    # Add all compositions to the assets
+    glaxnimate_data["assets"]["compositions"]["values"].append(upright_triangle_composition)
+    glaxnimate_data["assets"]["compositions"]["values"].append(inverted_triangle_composition)
+    glaxnimate_data["assets"]["compositions"]["values"].append(main_composition)
+    
+    return glaxnimate_data
+
+def generate_rawr_square_tiling(width, height, corners, tile_size, rotation, fill, stroke, stroke_width, animate):
+    """Generate a RAWR file with a grid of animated square tiles filling the entire canvas."""
+    
+    # Create a base structure for the RAWR file
+    glaxnimate_data = {
+        "assets": {
+            "__type__": "Assets",
+            "colors": {
+                "__type__": "NamedColorList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "compositions": {
+                "__type__": "CompositionList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "fonts": {
+                "__type__": "FontList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "gradient_colors": {
+                "__type__": "GradientColorsList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "gradients": {
+                "__type__": "GradientList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "images": {
+                "__type__": "BitmapList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "name": "",
+            "uuid": str(uuid.uuid4())
+        },
+        "format": {
+            "format_version": 8,
+            "generator": "Glaxnimate",
+            "generator_version": "0.5.4+appimage-dc26f367"
+        },
+        "info": {
+            "author": "",
+            "description": "",
+            "keywords": []
+        },
+        "metadata": {}
+    }
+    
+    # Create the precomposed tile composition (exactly like in your example)
+    tile_uuid = str(uuid.uuid4())
+    tile_composition = {
+        "__type__": "Composition",
+        "animation": {
+            "__type__": "AnimationContainer",
+            "first_frame": 0,
+            "last_frame": 180
+        },
+        "fps": 60,
+        "group_color": "#00000000",
+        "height": tile_size,
+        "locked": False,
+        "name": "Layer",
+        "shapes": [
+            {
+                "__type__": "Layer",
+                "animation": {
+                    "__type__": "AnimationContainer",
+                    "first_frame": 0,
+                    "last_frame": 180
+                },
+                "auto_orient": False,
+                "group_color": "#00000000",
+                "locked": False,
+                "mask": {
+                    "__type__": "MaskSettings",
+                    "inverted": False,
+                    "mask": "NoMask"
+                },
+                "name": "Layer",
+                "opacity": {
+                    "value": 1
+                },
+                "parent": None,
+                "render": True,
+                "shapes": [
+                    {
+                        "__type__": "Layer",
+                        "animation": {
+                            "__type__": "AnimationContainer",
+                            "first_frame": 0,
+                            "last_frame": 180
+                        },
+                        "auto_orient": False,
+                        "group_color": "#00000000",
+                        "locked": False,
+                        "mask": {
+                            "__type__": "MaskSettings",
+                            "inverted": False,
+                            "mask": "NoMask"
+                        },
+                        "name": "Rectangle",
+                        "opacity": {
+                            "value": 1
+                        },
+                        "parent": None,
+                        "render": True,
+                        "shapes": [
+                            {
+                                "__type__": "Fill",
+                                "color": {
+                                    "value": fill
+                                },
+                                "fill_rule": "NonZero",
+                                "group_color": "#00000000",
+                                "locked": False,
+                                "name": "Fill",
+                                "opacity": {
+                                    "value": 1
+                                },
+                                "use": None,
+                                "uuid": str(uuid.uuid4()),
+                                "visible": True
+                            },
+                            {
+                                "__type__": "Stroke",
+                                "cap": "ButtCap",
+                                "color": {
+                                    "value": stroke
+                                },
+                                "group_color": "#00000000",
+                                "join": "MiterJoin",
+                                "locked": False,
+                                "miter_limit": 4,
+                                "name": "Stroke",
+                                "opacity": {
+                                    "value": 1
+                                },
+                                "use": None,
+                                "uuid": str(uuid.uuid4()),
+                                "visible": True,
+                                "width": {
+                                    "value": stroke_width
+                                }
+                            },
+                            {
+                                "__type__": "Rect",
+                                "group_color": "#00000000",
+                                "locked": False,
+                                "name": "Rectangle",
+                                "position": {
+                                    "value": {
+                                        "x": 0,
+                                        "y": 0
+                                    }
+                                },
+                                "reversed": False,
+                                "rounded": {
+                                    "value": 0
+                                },
+                                "size": {
+                                    "value": {
+                                        "height": tile_size,
+                                        "width": tile_size
+                                    }
+                                },
+                                "uuid": str(uuid.uuid4()),
+                                "visible": True
+                            }
+                        ],
+                        "transform": {
+                            "__type__": "Transform",
+                            "anchor_point": {
+                                "value": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "position": {
+                                "value": {
+                                    "x": tile_size/2,
+                                    "y": tile_size/2
+                                }
+                            },
+                            "rotation": {
+                                "value": 0
+                            },
+                            "scale": {
+                                "value": {
+                                    "x": 1,
+                                    "y": 1
+                                }
+                            }
+                        },
+                        "uuid": str(uuid.uuid4()),
+                        "visible": True
+                    }
+                ],
+                "transform": {
+                    "__type__": "Transform",
+                    "anchor_point": {
+                        "value": {
+                            "x": tile_size/2,
+                            "y": tile_size/2
+                        }
+                    },
+                    "position": {
+                        "value": {
+                            "x": tile_size/2,
+                            "y": tile_size/2
+                        }
+                    },
+                    "rotation": {
+                        "value": 0
+                    },
+                    "scale": {
+                        "keyframes": [
+                            {
+                                "after": {
+                                    "x": 1,
+                                    "y": 1
+                                },
+                                "before": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "time": 0,
+                                "value": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            {
+                                "after": {
+                                    "x": 1,
+                                    "y": 1
+                                },
+                                "before": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "time": 30,
+                                "value": {
+                                    "x": 1,
+                                    "y": 1
+                                }
+                            },
+                            {
+                                "after": {
+                                    "x": 1,
+                                    "y": 1
+                                },
+                                "before": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "time": 60,
+                                "value": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            }
+                        ]
+                    }
+                },
+                "uuid": str(uuid.uuid4()),
+                "visible": True
+            }
+        ],
+        "uuid": tile_uuid,
+        "visible": True,
+        "width": tile_size
+    }
+    
+    # Calculate how many tiles we need
+    cols = math.ceil(width / tile_size)
+    rows = math.ceil(height / tile_size)
+    
+    # Create the main composition with a grid of precomposed tiles
+    main_uuid = str(uuid.uuid4())
+    precomp_layers = []
+    
+    for row in range(rows):
+        for col in range(cols):
+            # Calculate position
+            x = col * tile_size
+            y = row * tile_size
+            
+            # Create a precomposed layer for this tile
+            precomp_layer = {
+                "__type__": "PreCompLayer",
+                "composition": tile_uuid,
+                "group_color": "#00000000",
+                "locked": False,
+                "name": f"Tile {row*cols + col + 1}",
+                "opacity": {"value": 1},
+                "size": {"height": tile_size, "width": tile_size},
+                "timing": {
+                    "__type__": "StretchableTime",
+                    "start_time": 0,
+                    "stretch": 1
+                },
+                "transform": {
+                    "__type__": "Transform",
+                    "anchor_point": {"value": {"x": 0, "y": 0}},
+                    "position": {"value": {"x": x, "y": y}},
+                    "rotation": {"value": 0},
+                    "scale": {"value": {"x": 1, "y": 1}}
+                },
+                "uuid": str(uuid.uuid4()),
+                "visible": True
+            }
+            
+            precomp_layers.append(precomp_layer)
+    
+    main_composition = {
+        "__type__": "Composition",
+        "animation": {
+            "__type__": "AnimationContainer",
+            "first_frame": 0,
+            "last_frame": 60
+        },
+        "fps": 60,
+        "group_color": "#00000000",
+        "height": height,
+        "locked": False,
+        "name": "Main Composition",
+        "shapes": precomp_layers,
+        "uuid": main_uuid,
+        "visible": True,
+        "width": width
+    }
+    
+    # Add both compositions to the assets
+    glaxnimate_data["assets"]["compositions"]["values"].append(tile_composition)
+    glaxnimate_data["assets"]["compositions"]["values"].append(main_composition)
+    
+    return glaxnimate_data
+
+def generate_rawr_hexagonal_tiling(width, height, corners, tile_size, rotation, fill, stroke, stroke_width, animate):
+    """Generate a RAWR file with a hexagonal tiling pattern that has no holes or overlaps."""
+    
+    # Create a base structure for the RAWR file
+    glaxnimate_data = {
+        "assets": {
+            "__type__": "Assets",
+            "colors": {
+                "__type__": "NamedColorList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "compositions": {
+                "__type__": "CompositionList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "fonts": {
+                "__type__": "FontList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "gradient_colors": {
+                "__type__": "GradientColorsList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "gradients": {
+                "__type__": "GradientList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "images": {
+                "__type__": "BitmapList",
+                "name": "",
+                "uuid": str(uuid.uuid4()),
+                "values": []
+            },
+            "name": "",
+            "uuid": str(uuid.uuid4())
+        },
+        "format": {
+            "format_version": 8,
+            "generator": "Glaxnimate",
+            "generator_version": "0.5.4+appimage-dc26f367"
+        },
+        "info": {
+            "author": "",
+            "description": "",
+            "keywords": []
+        },
+        "metadata": {}
+    }
+    
+    # Create the precomposed tile composition for a hexagon
+    tile_uuid = str(uuid.uuid4())
+    hex_radius = tile_size
+    hex_composition = {
+        "__type__": "Composition",
+        "animation": {
+            "__type__": "AnimationContainer",
+            "first_frame": 0,
+            "last_frame": 180
+        },
+        "fps": 60,
+        "group_color": "#00000000",
+        "height": hex_radius * 2,
+        "locked": False,
+        "name": "Hexagon",
+        "shapes": [
+            {
+                "__type__": "Layer",
+                "animation": {
+                    "__type__": "AnimationContainer",
+                    "first_frame": 0,
+                    "last_frame": 180
+                },
+                "auto_orient": False,
+                "group_color": "#00000000",
+                "locked": False,
+                "mask": {
+                    "__type__": "MaskSettings",
+                    "inverted": False,
+                    "mask": "NoMask"
+                },
+                "name": "Layer",
+                "opacity": {
+                    "value": 1
+                },
+                "parent": None,
+                "render": True,
+                "shapes": [
+                    {
+                        "__type__": "Group",
+                        "auto_orient": False,
+                        "group_color": "#00000000",
+                        "locked": False,
+                        "name": "PolyStar",
+                        "opacity": {
+                            "value": 1
+                        },
+                        "shapes": [
+                            {
+                                "__type__": "Fill",
+                                "color": {
+                                    "value": fill
+                                },
+                                "fill_rule": "NonZero",
+                                "group_color": "#00000000",
+                                "locked": False,
+                                "name": "Fill",
+                                "opacity": {
+                                    "value": 1
+                                },
+                                "use": None,
+                                "uuid": str(uuid.uuid4()),
+                                "visible": True
+                            },
+                            {
+                                "__type__": "Stroke",
+                                "cap": "ButtCap",
+                                "color": {
+                                    "value": stroke
+                                },
+                                "group_color": "#00000000",
+                                "join": "MiterJoin",
+                                "locked": False,
+                                "miter_limit": 4,
+                                "name": "Stroke",
+                                "opacity": {
+                                    "value": 1
+                                },
+                                "use": None,
+                                "uuid": str(uuid.uuid4()),
+                                "visible": True,
+                                "width": {
+                                    "value": stroke_width
+                                }
+                            },
+                            {
+                                "__type__": "PolyStar",
+                                "angle": {
+                                    "value": 180
+                                },
+                                "group_color": "#00000000",
+                                "inner_radius": {
+                                    "value": hex_radius
+                                },
+                                "inner_roundness": {
+                                    "value": 0
+                                },
+                                "locked": False,
+                                "name": "PolyStar",
+                                "outer_radius": {
+                                    "value": hex_radius
+                                },
+                                "outer_roundness": {
+                                    "value": 0
+                                },
+                                "points": {
+                                    "value": 6
+                                },
+                                "position": {
+                                    "value": {
+                                        "x": 0,
+                                        "y": 0
+                                    }
+                                },
+                                "reversed": False,
+                                "type": "Polygon",
+                                "uuid": str(uuid.uuid4()),
+                                "visible": True
+                            }
+                        ],
+                        "transform": {
+                            "__type__": "Transform",
+                            "anchor_point": {
+                                "value": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            "position": {
+                                "value": {
+                                    "x": hex_radius,
+                                    "y": hex_radius
+                                }
+                            },
+                            "rotation": {
+                                "value": 0
+                            },
+                            "scale": {
+                                "value": {
+                                    "x": 1,
+                                    "y": 1
+                                }
+                            }
+                        },
+                        "uuid": str(uuid.uuid4()),
+                        "visible": True
+                    }
+                ],
+                "transform": {
+                    "__type__": "Transform",
+                    "anchor_point": {
+                        "value": {
+                            "x": hex_radius,
+                            "y": hex_radius
+                        }
+                    },
+                    "position": {
+                        "value": {
+                            "x": hex_radius,
+                            "y": hex_radius
+                        }
+                    },
+                    "rotation": {
+                        "value": 0
+                    },
+                    "scale": {
+                        "keyframes": [
+                            {
+                                "after": {
+                                    "x": 1,
+                                    "y": 1
+                                },
+                                "before": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "time": 0,
+                                "value": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            },
+                            {
+                                "after": {
+                                    "x": 1,
+                                    "y": 1
+                                },
+                                "before": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "time": 30,
+                                "value": {
+                                    "x": 1,
+                                    "y": 1
+                                }
+                            },
+                            {
+                                "after": {
+                                    "x": 1,
+                                    "y": 1
+                                },
+                                "before": {
+                                    "x": 0,
+                                    "y": 0
+                                },
+                                "time": 60,
+                                "value": {
+                                    "x": 0,
+                                    "y": 0
+                                }
+                            }
+                        ] if animate else {"value": {"x": 1, "y": 1}}
+                    }
+                },
+                "uuid": str(uuid.uuid4()),
+                "visible": True
+            }
+        ],
+        "uuid": tile_uuid,
+        "visible": True,
+        "width": hex_radius * 2
+    }
+    
+    # Calculate hexagon dimensions
+    hex_radius = tile_size
+    horizontal_spacing = hex_radius * math.sqrt(3)
+    vertical_spacing = hex_radius * 1.5
+    
+    # Calculate how many tiles we need
+    cols = math.ceil(width / horizontal_spacing) + 2
+    rows = math.ceil(height / vertical_spacing) + 2
+    
+    # Starting position to center the pattern
+    start_x = (width - (cols-1) * horizontal_spacing) / 2
+    start_y = (height - (rows-1) * vertical_spacing) / 2
+    
+    # Create the main composition with a grid of precomposed tiles
+    main_uuid = str(uuid.uuid4())
+    precomp_layers = []
+    
+    for row in range(rows):
+        for col in range(cols):
+            # Calculate position
+            x = start_x + col * horizontal_spacing
+            y = start_y + row * vertical_spacing
+            
+            # Offset every other row by half the horizontal spacing
+            if row % 2 == 1:
+                x += horizontal_spacing / 2
+            
+            # Create a precomposed layer for this hexagon
+            precomp_layer = {
+                "__type__": "PreCompLayer",
+                "composition": tile_uuid,
+                "group_color": "#00000000",
+                "locked": False,
+                "name": f"Hexagon {row*cols + col + 1}",
+                "opacity": {"value": 1},
+                "size": {"height": hex_radius * 2, "width": hex_radius * 2},
+                "timing": {
+                    "__type__": "StretchableTime",
+                    "start_time": 0,
+                    "stretch": 1
+                },
+                "transform": {
+                    "__type__": "Transform",
+                    "anchor_point": {"value": {"x": 0, "y": 0}},
+                    "position": {"value": {"x": x, "y": y}},
+                    "rotation": {"value": rotation},
+                    "scale": {"value": {"x": 1, "y": 1}}
+                },
+                "uuid": str(uuid.uuid4()),
+                "visible": True
+            }
+            
+            precomp_layers.append(precomp_layer)
+    
+    main_composition = {
+        "__type__": "Composition",
+        "animation": {
+            "__type__": "AnimationContainer",
+            "first_frame": 0,
+            "last_frame": 60
+        },
+        "fps": 60,
+        "group_color": "#00000000",
+        "height": height,
+        "locked": False,
+        "name": "Main Composition",
+        "shapes": precomp_layers,
+        "uuid": main_uuid,
+        "visible": True,
+        "width": width
+    }
+    
+    # Add both compositions to the assets
+    glaxnimate_data["assets"]["compositions"]["values"].append(hex_composition)
+    glaxnimate_data["assets"]["compositions"]["values"].append(main_composition)
+    
+    return glaxnimate_data
+
+def main():
+    parser = argparse.ArgumentParser(description="Generate an SVG or RAWR file with tiled shapes.")
+    parser.add_argument('--width', type=int, default=1280, help="Width of the canvas (default: 1280)")
+    parser.add_argument('--height', type=int, default=720, help="Height of the canvas (default: 720)")
+    parser.add_argument('--corners', type=int, choices=[3, 4, 6], required=True, help="Number of corners of the tile (3, 4, or 6)")
+    parser.add_argument('--tile_size', type=float, default=50, help="Size of each tile (default: 50)")
+    parser.add_argument('--rotation', type=float, default=0, help="Rotation angle in degrees (default: 0)")
+    parser.add_argument('--fill', type=str, default="white", help="Fill color of the tiles (default: white)")
+    parser.add_argument('--stroke', type=str, default="black", help="Stroke color of the tiles (default: black)")
+    parser.add_argument('--stroke_width', type=float, default=1, help="Stroke width of the tiles (default: 1)")
+    parser.add_argument('--output', type=str, default="output", help="Output file name without extension (default: output)")
+    parser.add_argument('--format', type=str, choices=["svg", "rawr"], default="svg", help="Output format (svg or rawr) (default: svg)")
+    parser.add_argument('--animate', action='store_true', help="Add animation to the tiles")
+    
+    args = parser.parse_args()
+    
+    if args.format.lower() == "svg":
+        svg_content = generate_svg(
+            args.width, args.height, args.corners,
+            args.tile_size, args.rotation, args.fill, args.stroke, args.stroke_width, args.animate
+        )
+        
+        output_file = f"{args.output}.svg"
+        with open(output_file, 'w') as f:
+            f.write(svg_content)
+        
+        print(f"SVG file '{output_file}' generated successfully.")
+    
+    elif args.format.lower() == "rawr":
+        glaxnimate_data = generate_rawr(
+            args.width, args.height, args.corners, args.tile_size, args.rotation,
+            args.fill, args.stroke, args.stroke_width, args.animate
+        )
+
+        output_file = f"{args.output}.rawr"
+        with open(output_file, 'w') as f:
+            json.dump(glaxnimate_data, f, indent=4)
+        
+        print(f"RAWR file '{output_file}' generated successfully.")
+
+if __name__ == "__main__":
+    main()
