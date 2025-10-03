@@ -21,4 +21,4 @@ Each file starts with the initial prompt, it also shows how hard it is to get mo
 - **Tile size** (width=height)
 - **rotation**, this applies to all **Tiles** together not individually
 - **format**, either *SVG* or *RAWR*
-- **animation** (only supports a basic 0% to 100% scale per tile on v14)
+- **animation** (only supports a basic 0% to 100% scale per tile on v14 but you can just edit the tile composition)
