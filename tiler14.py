@@ -363,7 +363,7 @@ def generate_triangular_tiling(width, height, size, rotation, fill, stroke, stro
                     "inverted": False,
                     "mask": "NoMask"
                 },
-                "name": "Layer",
+                "name": "Tile",
                 "opacity": {
                     "value": 1
                 },
@@ -614,7 +614,7 @@ def generate_triangular_tiling(width, height, size, rotation, fill, stroke, stro
                     "inverted": False,
                     "mask": "NoMask"
                 },
-                "name": "Layer",
+                "name": "Tile",
                 "opacity": {
                     "value": 1
                 },
@@ -1196,7 +1196,7 @@ def generate_rawr_triangular_tiling(width, height, corners, tile_size, rotation,
                     "inverted": False,
                     "mask": "NoMask"
                 },
-                "name": "Layer",
+                "name": "Tile",
                 "opacity": {
                     "value": 1
                 },
@@ -1447,7 +1447,7 @@ def generate_rawr_triangular_tiling(width, height, corners, tile_size, rotation,
                     "inverted": False,
                     "mask": "NoMask"
                 },
-                "name": "Layer",
+                "name": "Tile",
                 "opacity": {
                     "value": 1
                 },
@@ -1872,7 +1872,7 @@ def generate_rawr_square_tiling(width, height, corners, tile_size, rotation, fil
         "group_color": "#00000000",
         "height": tile_size,
         "locked": False,
-        "name": "Layer",
+        "name": "Tile",
         "shapes": [
             {
                 "__type__": "Layer",
@@ -1889,7 +1889,7 @@ def generate_rawr_square_tiling(width, height, corners, tile_size, rotation, fil
                     "inverted": False,
                     "mask": "NoMask"
                 },
-                "name": "Layer",
+                "name": "Tile",
                 "opacity": {
                     "value": 1
                 },
@@ -2278,7 +2278,7 @@ def generate_rawr_hexagonal_tiling(width, height, corners, tile_size, rotation, 
         "group_color": "#00000000",
         "height": hex_radius * 2,
         "locked": False,
-        "name": "Layer",
+        "name": "Tile",
         "shapes": [
             {
                 "__type__": "Layer",
@@ -2295,7 +2295,7 @@ def generate_rawr_hexagonal_tiling(width, height, corners, tile_size, rotation, 
                     "inverted": False,
                     "mask": "NoMask"
                 },
-                "name": "Layer",
+                "name": "Tile",
                 "opacity": {
                     "value": 1
                 },
