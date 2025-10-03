@@ -11,7 +11,7 @@ Each file starts with the initial prompt, it also shows how hard it is to get mo
 - Outputs **SVG** files
 - Outputs **RAWR** files which can be animated
 - No *holes* between **Tiles**
-- No *overlapping* **Tiles**
+- No *overlapping* **Tiles**, this applies to *fill*, not *stroke*
 
 ## Arguments
 - **width** and **height** of the **document**
