@@ -8,7 +8,7 @@ Each file starts with the initial prompt, it also shows how hard it is to get mo
 ## Features
 - No **Dependencies** (**SVG**/**RAWR** is plain text after all)
 - **Pyhon** script
-- Outputs **SVG** files
+- Outputs **SVG** files (could of been animated but it's per-Tile so they'd get huge)
 - Outputs **RAWR** files which can be animated
 - No *holes* between **Tiles**
 - No *overlapping* **Tiles**, this applies to *fill*, not *stroke*
