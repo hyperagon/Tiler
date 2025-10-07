@@ -6,7 +6,7 @@ Version 9+ supports **RAWR** and animation.
 Each file starts with the initial prompt, it also shows how hard it is to get models to properly follow instrucriona.
 
 ## Features
-- No **Dependencies** (**SVG**/**RAWR** is plain text after all)
+- No **Dependencies** (**SVG**/**RAWR**/**HTML** is plain text after all)
 - **Pyhon** script
 - Outputs **SVG** files
 - Outputs **RAWR** files
