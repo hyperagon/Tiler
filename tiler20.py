@@ -41,7 +41,7 @@ def generate_square(x, y, size, fill="white", stroke="black", stroke_width=1):
         (x + half_size, y + half_size),  # Bottom right
         (x - half_size, y + half_size)   # Bottom left
     ]
-    points_str = ' '.join([f"{p[0]},{p[1]}" for p in points])'
+    points_str = ' '.join([f"{p[0]},{p[1]}" for p in points])
     return f'<polygon points="{points_str}" fill="{fill}" stroke="{stroke}" stroke-width="{stroke_width}"/>'
 
 def generate_hexagon(x, y, size, fill="white", stroke="black", stroke_width=1):
