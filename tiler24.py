@@ -1,9 +1,6 @@
 """
 Tiles aren't centered, thwy were supposed to scale up ehile maintaining their cente point.
 """
-"""
-Tiles aren't centered, they were supposed to scale up while maintaining their center point.
-"""
 import argparse
 import math
 import json
