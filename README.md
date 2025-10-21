@@ -1,5 +1,5 @@
 # Tiler
-A Tiled Mesh **SVG**/**RAWR**/**HTML** Builder, vibe-coded from 2025-09-24 to 2025-10-17.
+A Tiled Mesh **SVG**/**RAWR**/**HTML** Builder, vibe-coded from 2025-09-24 to 2025-10-21.
 
 Version 9+ supports **RAWR** and animation.
 
