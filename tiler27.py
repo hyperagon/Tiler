@@ -6,6 +6,8 @@ ok get rid of opacity-radial and make opacity-spiral into opacity, also make til
 said tiles don't fade in either, is it so hard to understand fade-in in a spiral (wave coming from center if no direction),opaque,fade-out (wave coming from center if no direction)
 
 add an argument to set the duration of the whole animation in seconds, default 1 second
+
+fix this to properly fade-in and fade-out each row of tiles
 """
 import argparse
 import math
@@ -411,7 +413,7 @@ def get_opacity_animation_values(row, col, rows, cols, direction, duration):
         fade_in_start = 0
         fade_in_end = spiral_position * 0.35
         opaque_start = fade_in_end
-        opaque_end = fade_in_end + 0.3
+        opaque_end = min(fade_in_end + 0.3, 0.9)  # Ensure we don't go too close to 1
         fade_out_start = opaque_end
         fade_out_end = 1.0
         
@@ -422,20 +424,24 @@ def get_opacity_animation_values(row, col, rows, cols, direction, duration):
     else:
         position = 0
     
-    # Calculate keyTimes and values for clear-fill-clear effect
-    # Animation timeline:
-    # 0.0: start at 0 (clear)
-    # position * 0.4: start appearing (fill)
-    # position * 0.4 + 0.2: fully visible
-    # position * 0.4 + 0.4: start disappearing (clear)
-    # 1.0: back to 0 (clear)
+    # For directional animations, we want:
+    # 1. A clear period at the beginning
+    # 2. A fade-in period
+    # 3. An opaque period
+    # 4. A fade-out period
+    # 5. A clear period at the end
     
-    appear_start = position * 0.4
-    fully_visible = appear_start + 0.2
-    disappear_start = appear_start + 0.4
+    # Calculate timing for clear-fill-clear effect
+    fade_in_start = position * 0.25          # When to start fading in
+    fade_in_end = fade_in_start + 0.15       # When to finish fading in
+    fade_out_start = position * 0.25 + 0.6  # When to start fading out
+    fade_out_end = min(fade_out_start + 0.15, 0.95)  # When to finish fading out
     
-    key_times = f"0; {appear_start}; {fully_visible}; {disappear_start}; 1"
-    values = "0; 0; 1; 1; 0"
+    # Ensure fade_out_start is after fade_in_end
+    fade_out_start = max(fade_out_start, fade_in_end + 0.1)
+    
+    key_times = f"0; {fade_in_start}; {fade_in_end}; {fade_out_start}; {fade_out_end}; 1"
+    values = "0; 0; 1; 1; 0; 0"
     
     return key_times, values
 
