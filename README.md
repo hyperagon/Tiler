@@ -24,5 +24,6 @@ Each file starts with the initial prompt, it also shows how hard it is to get mo
 - --**tile_size**/s (width=height)
 - --**rotation**/-r, this applies to all **Tiles** together not individually
 - --**format**/-F, either *SVG*, *RAWR* or *HTML*
-- --**animate**/-a scale(-direction) or move-direction
+- --**animate**/-a scale(-direction) or move-direction or opacity(-direction)
 - --**output**/-o name of the file
+- --**duration**/-D time in seconds that the animimation takes
