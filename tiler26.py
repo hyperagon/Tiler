@@ -5,9 +5,6 @@ no no no, what's up with the sparse tiles? I want all the tiles moving together
 
 nice but why aren't the tiles sliding off in the direction I don't want it to stop when they touch the edge
 """
-"""
-Add move-direction animations where all tiles are made off-screen and slide to the target direction.
-"""
 import argparse
 import math
 import json
