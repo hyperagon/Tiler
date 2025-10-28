@@ -18,30 +18,61 @@ southeast can also be downright or dr
 southwest can also be downleft or dl
 
 give me the full code updated
+
+Human Intervention (nwes, correct the directions)
 """
 import argparse
 import math
 import json
 import uuid
 
+ANIMATION_MAPPING = {
+    'scale': 'scale',
+    'opacity': 'opacity',
+    'move': 'move',
+}
+
 # Mapping from abbreviations to full direction names
 DIRECTION_MAPPING = {
+    'north': 'north',
+    'n': 'north',
     'u': 'north',
     'up': 'north',
+
+    'south': 'south',
+    's': 'south',
     'd': 'south',
     'down': 'south',
+
+    'west': 'west',
+    'w': 'west',
     'l': 'west',
     'left': 'west',
+
+    'east': 'east',
+    'e': 'east',
     'r': 'east',
     'right': 'east',
-    'ur': 'northeast',
-    'upright': 'northeast',
-    'ul': 'northwest',
-    'upleft': 'northwest',
-    'dr': 'southeast',
-    'downright': 'southeast',
-    'dl': 'southwest',
-    'downleft': 'southwest'
+    # I had to invert the directions since the LLM got it wrong
+    'northeast': 'southeast',
+    'ne': 'southeast',
+    'ur': 'southeast',
+    'upright': 'southeast',
+
+    'northwest': 'southwest',
+    'nw': 'southwest',
+    'ul': 'southwest',
+    'upleft': 'southwest',
+
+    'southeast': 'northeast',
+    'se': 'northeast',
+    'dr': 'northeast',
+    'downright': 'northeast',
+
+    'southwest': 'northwest',
+    'sw': 'northwest',
+    'dl': 'northwest',
+    'downleft': 'northwest',
 }
 
 def normalize_animation_type(animation_type):
@@ -50,14 +81,14 @@ def normalize_animation_type(animation_type):
         return None
     
     # If it's a non-directional animation or a move animation, return as is
-    if animation_type in ['scale', 'opacity'] or animation_type.startswith('move-'):
+    if animation_type in ['scale', 'opacity']:
         return animation_type
     
     # Check if it's a directional animation (scale-<direction> or opacity-<direction>)
     parts = animation_type.split('-', 1)
     if len(parts) == 2:
         prefix, direction = parts
-        if prefix in ['scale', 'opacity'] and direction in DIRECTION_MAPPING:
+        if prefix in ANIMATION_MAPPING and direction in DIRECTION_MAPPING:
             return f"{prefix}-{DIRECTION_MAPPING[direction]}"
     
     # If it doesn't match any pattern, return the original
@@ -69,14 +100,14 @@ def generate_animation_choices():
     
     # Add directional scale and opacity animations with abbreviations
     for direction, abbrevs in [
-        ('north', ['u', 'up']),
-        ('south', ['d', 'down']),
-        ('west', ['l', 'left']),
-        ('east', ['r', 'right']),
-        ('northeast', ['ur', 'upright']),
-        ('northwest', ['ul', 'upleft']),
-        ('southeast', ['dr', 'downright']),
-        ('southwest', ['dl', 'downleft'])
+        ('north', ['n', 'u', 'up']),
+        ('south', ['s', 'd', 'down']),
+        ('west', ['w', 'l', 'left']),
+        ('east', ['e', 'r', 'right']),
+        ('northeast', ['nw', 'ur', 'upright']),
+        ('northwest', ['ne', 'ul', 'upleft']),
+        ('southeast', ['se', 'dr', 'downright']),
+        ('southwest', ['sw', 'dl', 'downleft'])
     ]:
         for prefix in ['scale', 'opacity']:
             choices.append(f"{prefix}-{direction}")
@@ -84,7 +115,7 @@ def generate_animation_choices():
                 choices.append(f"{prefix}-{ab}")
     
     # Add move animations (only full names for move)
-    move_directions = ['north', 'south', 'east', 'west', 'northeast', 'northwest', 'southeast', 'southwest']
+    move_directions = ['north', 'n', 'south', 's', 'east', 'e', 'west', 'w', 'northeast', 'ne', 'northwest', 'nw', 'southeast', 'se', 'southwest', 'sw']
     for direction in move_directions:
         choices.append(f"move-{direction}")
     
