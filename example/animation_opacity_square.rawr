@@ -1,0 +1,266 @@
+{
+    "assets": {
+        "__type__": "Assets",
+        "colors": {
+            "__type__": "NamedColorList",
+            "name": "",
+            "uuid": "c56ca71b-4097-4f3f-b937-d6cc8072977e",
+            "values": [
+            ]
+        },
+        "compositions": {
+            "__type__": "CompositionList",
+            "name": "",
+            "uuid": "b15fa921-c243-432a-88a9-93715861ec7e",
+            "values": [
+                {
+                    "__type__": "Composition",
+                    "animation": {
+                        "__type__": "AnimationContainer",
+                        "first_frame": 0,
+                        "last_frame": 60
+                    },
+                    "fps": 60,
+                    "group_color": "#00000000",
+                    "height": 512,
+                    "locked": false,
+                    "name": "Composition",
+                    "shapes": [
+                        {
+                            "__type__": "Layer",
+                            "animation": {
+                                "__type__": "AnimationContainer",
+                                "first_frame": 0,
+                                "last_frame": 60
+                            },
+                            "auto_orient": false,
+                            "group_color": "#00000000",
+                            "locked": false,
+                            "mask": {
+                                "__type__": "MaskSettings",
+                                "inverted": false,
+                                "mask": "NoMask"
+                            },
+                            "name": "Layer",
+                            "opacity": {
+                                "value": 1
+                            },
+                            "parent": null,
+                            "render": true,
+                            "shapes": [
+                                {
+                                    "__type__": "Group",
+                                    "auto_orient": false,
+                                    "group_color": "#00000000",
+                                    "locked": false,
+                                    "name": "Rectangle",
+                                    "opacity": {
+                                        "keyframes": [
+                                            {
+                                                "after": {
+                                                    "x": 1,
+                                                    "y": 1
+                                                },
+                                                "before": {
+                                                    "x": 0,
+                                                    "y": 0
+                                                },
+                                                "time": 0,
+                                                "value": 0
+                                            },
+                                            {
+                                                "after": {
+                                                    "x": 1,
+                                                    "y": 1
+                                                },
+                                                "before": {
+                                                    "x": 0,
+                                                    "y": 0
+                                                },
+                                                "time": 30,
+                                                "value": 1
+                                            },
+                                            {
+                                                "after": {
+                                                    "x": 1,
+                                                    "y": 1
+                                                },
+                                                "before": {
+                                                    "x": 0,
+                                                    "y": 0
+                                                },
+                                                "time": 60,
+                                                "value": 0
+                                            }
+                                        ]
+                                    },
+                                    "shapes": [
+                                        {
+                                            "__type__": "Fill",
+                                            "color": {
+                                                "value": "#ffffff"
+                                            },
+                                            "fill_rule": "NonZero",
+                                            "group_color": "#00000000",
+                                            "locked": false,
+                                            "name": "Fill",
+                                            "opacity": {
+                                                "value": 1
+                                            },
+                                            "use": null,
+                                            "uuid": "04fd68bc-5434-4374-a02b-f846c9643b3b",
+                                            "visible": true
+                                        },
+                                        {
+                                            "__type__": "Stroke",
+                                            "cap": "ButtCap",
+                                            "color": {
+                                                "value": "#000000"
+                                            },
+                                            "group_color": "#00000000",
+                                            "join": "MiterJoin",
+                                            "locked": false,
+                                            "miter_limit": 4,
+                                            "name": "Stroke",
+                                            "opacity": {
+                                                "value": 1
+                                            },
+                                            "use": null,
+                                            "uuid": "641debb8-1ff8-4bc3-a7ad-95a31ae2f697",
+                                            "visible": true,
+                                            "width": {
+                                                "value": 1
+                                            }
+                                        },
+                                        {
+                                            "__type__": "Rect",
+                                            "group_color": "#00000000",
+                                            "locked": false,
+                                            "name": "Rectangle",
+                                            "position": {
+                                                "value": {
+                                                    "x": 225.80976863753213,
+                                                    "y": 169.54241645244218
+                                                }
+                                            },
+                                            "reversed": false,
+                                            "rounded": {
+                                                "value": 0
+                                            },
+                                            "size": {
+                                                "value": {
+                                                    "height": 152.51413881748073,
+                                                    "width": 179.1670951156812
+                                                }
+                                            },
+                                            "uuid": "9d6e2303-3768-4c12-8cd9-a721ee3473c8",
+                                            "visible": true
+                                        }
+                                    ],
+                                    "transform": {
+                                        "__type__": "Transform",
+                                        "anchor_point": {
+                                            "value": {
+                                                "x": 225.80976863753213,
+                                                "y": 169.54241645244218
+                                            }
+                                        },
+                                        "position": {
+                                            "value": {
+                                                "x": 258.3856041131106,
+                                                "y": 262.82776349614403
+                                            }
+                                        },
+                                        "rotation": {
+                                            "value": 0
+                                        },
+                                        "scale": {
+                                            "value": {
+                                                "x": 2.8574059009552,
+                                                "y": 3.3534998893737793
+                                            }
+                                        }
+                                    },
+                                    "uuid": "5d34e723-6784-4081-af10-2be5f4eddafe",
+                                    "visible": true
+                                }
+                            ],
+                            "transform": {
+                                "__type__": "Transform",
+                                "anchor_point": {
+                                    "value": {
+                                        "x": 256,
+                                        "y": 256
+                                    }
+                                },
+                                "position": {
+                                    "value": {
+                                        "x": 256,
+                                        "y": 256
+                                    }
+                                },
+                                "rotation": {
+                                    "value": 0
+                                },
+                                "scale": {
+                                    "value": {
+                                        "x": 1,
+                                        "y": 1
+                                    }
+                                }
+                            },
+                            "uuid": "7d9993cd-6bb6-4315-aff8-b9f2ef5a55f2",
+                            "visible": true
+                        }
+                    ],
+                    "uuid": "31c6456f-7f73-4006-937a-3da3e6a8f688",
+                    "visible": true,
+                    "width": 512
+                }
+            ]
+        },
+        "fonts": {
+            "__type__": "FontList",
+            "name": "",
+            "uuid": "c54e67dc-fbfb-4d58-aa80-6dfefffa7095",
+            "values": [
+            ]
+        },
+        "gradient_colors": {
+            "__type__": "GradientColorsList",
+            "name": "",
+            "uuid": "1bb82e0d-5b56-40fb-98ef-ed7f1c1cc357",
+            "values": [
+            ]
+        },
+        "gradients": {
+            "__type__": "GradientList",
+            "name": "",
+            "uuid": "fbf98398-7a6f-43bd-b1ea-00738131c708",
+            "values": [
+            ]
+        },
+        "images": {
+            "__type__": "BitmapList",
+            "name": "",
+            "uuid": "4ff63a1c-abbd-43b7-9655-2737e6dd2d27",
+            "values": [
+            ]
+        },
+        "name": "",
+        "uuid": "e4168876-50c7-4a39-aa58-44469168f3b4"
+    },
+    "format": {
+        "format_version": 8,
+        "generator": "Glaxnimate",
+        "generator_version": "0.5.4+appimage-dc26f367"
+    },
+    "info": {
+        "author": "",
+        "description": "",
+        "keywords": [
+        ]
+    },
+    "metadata": {
+    }
+}
